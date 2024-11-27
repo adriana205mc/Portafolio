@@ -343,6 +343,182 @@ h1 {
   background: #f1f1f1;
 }
 
+@media screen and (max-width: 400px) {
+  body {
+    background-color: #fff;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0; 
+  }
+
+  #about{
+    text-align: center;
+    width: auto;
+  }
+
+  .menu a{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    gap: 0.5em;
+  }
+
+  .info-content h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .info-content p {
+    font-size: 0.8em;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .download {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px; 
+  }
+
+  .main img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5em;
+  }
+
+  .about img {
+    grid-column: 1 / -1; 
+    max-width: 100%; 
+  }
+
+  .about-info {
+    grid-column: 1 / -1;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em; 
+    line-height: 1.4;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 1.8em;
+    padding: 2em;
+  }
+
+  .container1,
+  .container2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    padding: 0;
+   }
+
+   .card {
+      margin-bottom:10px;
+   }
+
+   .contact-section {
+      padding:.5em;
+   }
+
+   .container-contact {
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
+      max-width:90vw;
+      margin-top:.5em;
+   }
+
+   .miFoto2 {
+      width:auto;
+      max-width:200px;
+      margin-bottom:.5em;
+   }
+   
+   .contact-form {
+      width:auto;
+      margin-top:.5em;
+   }
+
+   .form-group {
+      width:auto;
+      margin-top:.5em;
+   }
+   
+   .form-group textarea,
+   .form-group .input {
+      padding:.5em;
+      margin-bottom:.25em;
+      width:auto;
+   }
+   
+   .form-group #button,
+   .form-group .btn-submit {
+      width:auto;
+      padding:.5em;
+      margin-top:.5em;
+   }
+   
+   .footer {
+      height:auto;
+      padding:.5em;
+   }
+   
+   .footer-content h2 {
+      font-size:1.8em;
+      margin-bottom:.25em;
+   }
+   
+   .footer-content h5 {
+      font-size:.9em;
+      margin-bottom:.25em;
+   }
+   
+   .sotial-networks {
+      width:auto;
+      justify-content:center;
+      margin-top:.25em;
+   }
+   
+   .sotial-networks i {
+      font-size:.9em;
+      margin:0 .25em;
+   }
+}
+
 @media screen and (max-width: 600px) {
   body {
     background-color: #fff;
@@ -360,6 +536,7 @@ h1 {
   .menu {
     width: 100%;
     justify-content: space-between;
+    text-align: center;
   }
 
   .main {
