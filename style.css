@@ -82,7 +82,7 @@ h1 {
   color: #d887f6;
 }
 
-.download-cv {
+.download {
   padding: 10px 20px;
   background-color: #d887f6;
   border: none;
@@ -94,7 +94,7 @@ h1 {
   box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
 
-.download-cv:hover {
+.download:hover {
   background-color: azure;
   box-shadow: none;
 }
@@ -209,7 +209,7 @@ h1 {
   text-align: center;
 }
 
-.card__title i{
+.card__title i {
   display: block;
 }
 
@@ -341,4 +341,172 @@ h1 {
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #fff;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    gap: 1em;
+  }
+
+  .info-content h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .info-content p {
+    font-size: 1em;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .download {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .main img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .download {
+    padding: 10px 15px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+
+  .about img {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .about-info {
+    grid-column: 1 / -1;
+    padding: 1em;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 2em;
+    padding: 3em;
+  }
+
+  .container1,
+  .container2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .container2 {
+    margin-right: 3rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .contact-section {
+    padding: 2em;
+  }
+
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    margin-top: 3em;
+  }
+
+  .miFoto2 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1em;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .form-group textarea,
+  .form-group .input {
+    padding: 10px;
+    margin-bottom: 0.5em;
+    width: calc(100% - 20px);
+  }
+
+  .form-group #button,
+  .form-group .btn-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1em;
+  }
+
+  .footer {
+    height: auto;
+    padding: 1em;
+  }
+
+  .footer-content h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .footer-content h5 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .sotial-networks {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+
+  .sotial-networks i {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
 }
