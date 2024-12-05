@@ -41,6 +41,10 @@ body {
   justify-content: space-around;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .menu li {
   list-style: none;
 }
@@ -352,29 +356,79 @@ h1 {
     font-size: 1.5em;
   }
 
+  .brand {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-left: 50px;
+  }
+
   .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
     flex-direction: column;
-    padding: 0.5em;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .navbar.show {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #d887f6;
+    z-index: 1001;
   }
 
   .menu {
     display: flex;
-    flex-direction: row;
-    width: 100%; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 0;
-    margin: 0; 
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+    margin-top: 100px;
   }
 
-  #about{
-    text-align: center;
-    width: auto;
+  .menu li:hover a {
+    background-color: #d887f6;
+    color: #191c32;
+    text-decoration: none;
   }
 
-  .menu a{
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .menu a {
     font-size: 0.8rem;
     text-align: center;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .main {
@@ -384,12 +438,12 @@ h1 {
     width: 100%;
     gap: 0.5em;
   }
-  
+
   .main img {
     border: 4px solid #d887f6;
     max-width: 100%;
     height: auto;
-    margin-top: 5px;
+    margin-top: 55px;
     width: 150px;
     height: auto;
   }
@@ -408,7 +462,12 @@ h1 {
   .download {
     width: 100%;
     padding: 10px;
-    margin-top: 5px; 
+    margin-top: 5px;
+  }
+
+  #about {
+    text-align: center;
+    width: auto;
   }
 
   .about {
@@ -417,8 +476,8 @@ h1 {
   }
 
   .about img {
-    grid-column: 1 / -1; 
-    max-width: 100%; 
+    grid-column: 1 / -1;
+    max-width: 100%;
   }
 
   .about-info {
@@ -427,13 +486,21 @@ h1 {
     text-align: center;
   }
 
-  h2 {
+  .portfolio-heading h2 {
     margin: 0;
-    font-size: 1.5em;
+    padding: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.2;
+    overflow: visible;
+  }
+
+  .portfolio-heading {
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   p {
-    font-size: 0.9em; 
+    font-size: 0.9em;
     line-height: 1.4;
   }
 
@@ -442,84 +509,94 @@ h1 {
     padding: 2em;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
   .container1,
   .container2 {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5px;
-    padding: 0;
-   }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
 
-   .card {
-      margin-bottom:10px;
-   }
+  .card {
+    margin-bottom: 10px;
+  }
 
-   .contact-section {
-      padding:.5em;
-   }
+  .contact-section {
+    padding: 0.5em;
+  }
 
-   .container-contact {
-      flex-direction: column;
-      align-items:center;
-      justify-content:center;
-      max-width:90vw;
-      margin-top:.5em;
-   }
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    margin-top: 0.5em;
+  }
 
-   .miFoto2 {
-      width:auto;
-      max-width:200px;
-      margin-bottom:.5em;
-   }
-   
-   .contact-form {
-      width:auto;
-      margin-top:.5em;
-   }
+  .miFoto2 {
+    width: auto;
+    max-width: 200px;
+    margin-bottom: 0.5em;
+  }
 
-   .form-group {
-      width:auto;
-      margin-top:.5em;
-   }
-   
-   .form-group textarea,
-   .form-group .input {
-      padding:.5em;
-      margin-bottom:.25em;
-      width:auto;
-   }
-   
-   .form-group #button,
-   .form-group .btn-submit {
-      width:auto;
-      padding:.5em;
-      margin-top:.5em;
-   }
-   
-   .footer {
-      height:auto;
-      padding:.5em;
-   }
-   
-   .footer-content h2 {
-      font-size:1.8em;
-      margin-bottom:.25em;
-   }
-   
-   .footer-content h5 {
-      font-size:.9em;
-      margin-bottom:.25em;
-   }
-   
-   .sotial-networks {
-      width:auto;
-      justify-content:center;
-      margin-top:.25em;
-   }
-   
-   .sotial-networks i {
-      font-size:.9em;
-      margin:0 .25em;
-   }
+  .contact-form {
+    width: auto;
+    margin-top: 0.5em;
+  }
+
+  .form-group {
+    width: auto;
+    margin-top: 0.5em;
+  }
+
+  .form-group textarea,
+  .form-group .input {
+    padding: 0.5em;
+    margin-bottom: 0.25em;
+    width: auto;
+  }
+
+  .form-group #button,
+  .form-group .btn-submit {
+    width: auto;
+    padding: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .footer {
+    height: auto;
+    padding: 0.5em;
+  }
+
+  .footer-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.25em;
+  }
+
+  .footer-content h5 {
+    font-size: 0.9em;
+    margin-bottom: 0.25em;
+  }
+
+  .sotial-networks {
+    width: auto;
+    justify-content: center;
+    margin-top: 0.25em;
+  }
+
+  .sotial-networks i {
+    font-size: 0.9em;
+    margin: 0 0.25em;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -529,6 +606,10 @@ h1 {
 
   h1 {
     font-size: 2em;
+  }
+
+  .brand {
+    padding: 25px;
   }
 
   .navbar {

@@ -16,18 +16,21 @@
 <body>
   <div class="contenido">
     <header>
+      <div class="brand">
+        <h2>Adri<span> AC</span></h2>
+      </div>
       <nav class="navbar">
-        <div class="brand">
-          <h2>Adri<span> AC</span></h2>
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar" id="sidebar">
+          <ul class="menu">
+            <li><a href="#info-content" class="active">Inicio</a></li>
+            <li><a href="#about">Quien Soy</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
         </div>
-        <ul class="menu">
-          <li><a href="#info-content" class="active">Inicio</a></li>
-          <li><a href="#about">Quien Soy</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
       </nav>
-    </header>
+    </header>  
 
     <!-- Inicio -->
     <main class="main" id="info-content">

@@ -20,3 +20,20 @@ document.getElementById('form').addEventListener('submit', function(event) {
       alert(JSON.stringify(err));
     });
 });
+
+// 400px
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  toggleButton.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+});
+
+
+function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  console.log('Toggle menu called'); // Verifica si la función se llama
+  navbar.classList.toggle('show');
+}
