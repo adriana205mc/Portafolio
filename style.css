@@ -466,9 +466,22 @@ h1 {
   }
 
   .download {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #d887f6;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  a {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    text-decoration: none;
   }
 
   #about {
