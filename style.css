@@ -450,7 +450,7 @@ h1 {
     max-width: 100%;
     height: auto;
     margin-top: 55px;
-    width: 200px;
+    width: 500px !important;
     height: auto;
   }
 
