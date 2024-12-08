@@ -603,7 +603,7 @@ h1 {
     justify-content: center;
     max-width: 90vw;
     margin-top: 0.5em;
-    margin-right: 170px;
+    margin-right: 180px;
   }
 
   .miFoto2 {
@@ -650,12 +650,6 @@ h1 {
   .footer-content h5 {
     font-size: 0.9em;
     margin-bottom: 0.25em;
-  }
-
-  .sotial-networks {
-    width: auto;
-    justify-content: center;
-    margin-top: 0.25em;
   }
 }
 
