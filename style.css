@@ -89,7 +89,7 @@ h1 {
   color: #d887f6;
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
 }
@@ -108,7 +108,7 @@ h1 {
   color: #d887f6;
 }
 
-.social-network i:hover{
+.social-network i:hover {
   color: #fff;
 }
 
@@ -369,7 +369,10 @@ h1 {
 
 @media screen and (max-width: 400px) {
   body {
-    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -380,7 +383,8 @@ h1 {
     padding: 20px;
     position: relative;
     z-index: 1;
-    margin-left: 50px;
+    justify-content: start;
+    margin-left: -200px !important;
   }
 
   .navbar {
@@ -470,6 +474,14 @@ h1 {
     height: auto;
   }
 
+  .info-content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px !important;
+  }
+
   .info-content h1 {
     font-size: 1.8em;
     text-align: center;
@@ -481,12 +493,12 @@ h1 {
     text-align: center;
   }
 
-  .links{
+  .links {
     display: flex;
     align-items: center;
     margin-left: 250px;
   }
-  
+
   .social-network {
     display: flex;
     justify-content: space-between;
@@ -582,6 +594,7 @@ h1 {
 
   .contact-section {
     padding: 0.5em;
+    max-width: 100%;
   }
 
   .container-contact {
@@ -590,6 +603,7 @@ h1 {
     justify-content: center;
     max-width: 90vw;
     margin-top: 0.5em;
+    margin-right: 170px;
   }
 
   .miFoto2 {
@@ -643,16 +657,13 @@ h1 {
     justify-content: center;
     margin-top: 0.25em;
   }
-
-  .sotial-networks i {
-    font-size: 0.9em;
-    margin: 0 0.25em;
-  }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -663,7 +674,8 @@ h1 {
     padding: 20px;
     position: relative;
     z-index: 1;
-    margin-left: 50px;
+    margin-left: 100px;
+    font-size: 20px;
   }
 
   .navbar {
@@ -717,15 +729,6 @@ h1 {
   .menu a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  .menu a:hover {
-    text-decoration: underline;
-  }
-
-  .menu a {
     font-size: 0.9rem;
     text-align: center;
     white-space: nowrap;
@@ -733,6 +736,10 @@ h1 {
     justify-content: space-between;
     max-width: 100%;
     overflow: hidden;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
   }
 
   .main {
@@ -752,6 +759,14 @@ h1 {
     height: auto;
   }
 
+  .info-content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+
   .info-content h1 {
     font-size: 2em;
     text-align: center;
@@ -761,14 +776,15 @@ h1 {
     font-size: 1em;
     padding: 0 10px;
     text-align: center;
+    max-width: 60%;
   }
 
-  .links{
+  .links {
     display: flex;
     align-items: center;
     margin-left: 250px;
   }
-  
+
   .social-network {
     display: flex;
     justify-content: space-between;
@@ -803,23 +819,24 @@ h1 {
   }
 
   .about {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0.5em;
   }
 
   .about img {
-    grid-column: 1 / -1;
-    max-width: 100%;
+    max-width: 50%;
+    margin-top: 9rem;
   }
 
   .about-info {
-    grid-column: 1 / -1;
-    padding: 0.5em;
-    text-align: center;
+    padding: 15px;
+    max-width: 50%;
+    margin-top: 20px;
   }
 
   .portfolio-heading h2 {
-    margin: 0;
     padding: 10px 0;
     font-size: 1.5em;
     line-height: 1.2;
@@ -827,7 +844,7 @@ h1 {
   }
 
   .portfolio-heading {
-    margin: 0 auto;
+    margin: 0 45px;
     padding: 0 10px;
   }
 
@@ -860,10 +877,17 @@ h1 {
 
   .card {
     margin-bottom: 10px;
+    max-width: 50%;
   }
 
   .contact-section {
     padding: 0.5em;
+  }
+
+  .contact-heading {
+    margin-left: 9rem;
+    font-size: 10px;
+    gap: 15px;
   }
 
   .container-contact {
@@ -871,7 +895,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 90vw;
+    max-width: 50vw;
     margin-top: 0.5em;
     gap: 20px;
   }
@@ -883,7 +907,6 @@ h1 {
 
   .contact-form {
     flex-grow: 1;
-    margin-top: 0;
   }
 
   .form-group {
@@ -919,16 +942,5 @@ h1 {
   .footer-content h5 {
     font-size: 1em;
     margin-bottom: 0.25em;
-  }
-
-  .sotial-networks {
-    width: auto;
-    justify-content: center;
-    margin-top: 0.25em;
-  }
-
-  .sotial-networks i {
-    font-size: 1em;
-    margin: 0 0.25em;
   }
 }
