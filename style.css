@@ -89,12 +89,38 @@ h1 {
   color: #d887f6;
 }
 
+.links{
+  display: flex;
+  align-items: center;
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 1em;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.social-network i {
+  font-size: 2.5em;
+  color: #d887f6;
+}
+
+.social-network i:hover{
+  color: #fff;
+}
+
 .download {
   padding: 10px 20px;
   background-color: #d887f6;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #191c32;
   border: none;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
   -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
   -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
@@ -134,6 +160,7 @@ h1 {
 .about-info {
   grid-column: 5 / 10;
   padding: 3em;
+  color: #000;
 }
 
 .divider {
@@ -320,17 +347,6 @@ h1 {
   text-align: center;
 }
 
-.sotial-networks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  margin-top: 1em;
-}
-
-.sotial-networks i {
-  font-size: 1.5em;
-}
-
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -463,6 +479,21 @@ h1 {
     font-size: 0.8em;
     padding: 0 5px;
     text-align: center;
+  }
+
+  .links{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+  }
+  
+  .social-network {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1em;
+    margin-left: 40px;
+    cursor: pointer;
   }
 
   .download {
@@ -730,6 +761,21 @@ h1 {
     font-size: 1em;
     padding: 0 10px;
     text-align: center;
+  }
+
+  .links{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+  }
+  
+  .social-network {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1em;
+    margin-left: 40px;
+    cursor: pointer;
   }
 
   .download {

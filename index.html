@@ -17,35 +17,40 @@
   <div class="contenido">
     <header>
       <div class="brand">
-        <h2>Adri<span> AC</span></h2>
+          <h2>Adri<span> AC</span></h2>
       </div>
       <nav class="navbar">
-        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-        <div class="sidebar" id="sidebar">
-          <ul class="menu">
-            <li><a href="#info-content" class="active">Inicio</a></li>
-            <li><a href="#about">Quien Soy</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
+          <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+          <div class="sidebar" id="sidebar">
+              <ul class="menu">
+                  <li><a href="#info-content" class="active">Inicio</a></li>
+                  <li><a href="#about">Quien Soy</a></li>
+                  <li><a href="#portfolio">Portafolio</a></li>
+                  <li><a href="#contact">Contacto</a></li>
+              </ul>
+          </div>
       </nav>
-    </header>  
+  </header>
 
     <!-- Inicio -->
     <main class="main" id="info-content">
       <div class="info-content">
-        <h1>I'm <span>Adriana</span> Apolinario</h1>
-        <p>Soy un estudiante de Ingeniería Industrial apasionado por el desarrollo frontend. Con habilidades en HTML, CSS y JavaScript, estoy en busca de desafíos que me permitan aprender y contribuir a proyectos creativos.
-        </p>
-        <a download href="https://drive.google.com/file/d/1ncawNzboJSjuCt_sxKQOxu_XhCQRG7eI/view?usp=sharing"
-          target="_blank" rel="noopener noreferrer">
-          <button class="download">Download CV</button>
-        </a>
+          <h1>I'm <span>Adriana</span> Apolinario</h1>
+          <p>Soy un estudiante de Ingeniería Industrial apasionado por el desarrollo frontend. Con habilidades en HTML, CSS y JavaScript, estoy en busca de desafíos que me permitan aprender y contribuir a proyectos creativos.</p>
+          <div class="links">
+              <a download href="https://drive.google.com/file/d/1ncawNzboJSjuCt_sxKQOxu_XhCQRG7eI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <button class="download">Download CV</button>
+              </a>
+              <a href="https://www.linkedin.com/in/adriana-apolinario-1a0668321/" target="_blank">
+                <div class="social-network">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+              </a>
+          </div>
       </div>
-      <img src="img/miFoto1.png" alt="">
-    </main>
-  </div>
+      <img src="img/miFoto1.png" alt="Foto de Adriana Apolinario">
+  </main>
+
 
   <!-- Quien soy -->
   <div id="about" class="about">
@@ -221,23 +226,15 @@
       <h2>Adriana Apolinairo</h2>
       <h5>Frontend Developer</h5>
     </div>
-    <div class="sotial-networks">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-twitter-square"></i>
-    </div>
   </footer>
-
-
+  </div>
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   
   <script type="text/javascript">
     emailjs.init('qORmoaXvnA9xR8E-u');
   </script>
 
-
   <script src="main.js"></script>
 
 </body>
-
 </html>
