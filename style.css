@@ -134,8 +134,8 @@ h1 {
 
 .main img {
   border: 7px solid #d887f6;
-  width: 350px;
-  height: 450px;
+  width: 320px;
+  height: 420px;
   z-index: 1;
   position: relative;
   object-fit: cover;
